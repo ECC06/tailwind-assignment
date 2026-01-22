@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Poppins";
+    src: url("/Poppins/Poppins-VariableFont_wght.otf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    --color-main-green: #28ae60;
+    --color-light-grey: #4c4c4c;
+}
+
+body {
+    font-family: "Poppins", system-ui, sans-serif;
+}
+
+header {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://preview.colorlib.com/theme/busicol/img/banner/banner2.png");
+}
+
+@layer components {
+    /* !navbar links styles */
+    .nav-links {
+        @apply overflow-hidden;
+    }
+
+    .nav-links li {
+        @apply text-[14px] font-[450];
+    }
+
+    .nav-link {
+        @apply px-2 py-1;
+    }
+
+    .dropdown-link {
+        @apply px-6 py-1;
+    }
+
+    /* !header call to action buttons */
+
+    .cta-btn {
+        @apply rounded-sm py-3 text-[14px] flex justify-center font-[450] tracking-widest;
+    }
+}
+
+@layer utilities {
+    .wrapper {
+        @apply w-[min(90%,1110px)];
+    }
+}
