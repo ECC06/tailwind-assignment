@@ -13,14 +13,38 @@
     --color-light-grey: #4c4c4c;
 }
 
-body {
-    font-family: "Poppins", system-ui, sans-serif;
-}
+@layer base {
+    body {
+        font-family: "Poppins", system-ui, sans-serif;
+    }
 
-header {
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("https://preview.colorlib.com/theme/busicol/img/banner/banner2.png");
+    h2 {
+        @apply text-3xl md:text-4xl font-[450];
+    }
+
+    header {
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            url("https://preview.colorlib.com/theme/busicol/img/banner/banner2.png");
+    }
+
+    .solution-li:nth-child(1) {
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+            url("https://preview.colorlib.com/theme/busicol/img/about/1.png");
+    }
+
+    .solution-li:nth-child(2) {
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+            url("https://preview.colorlib.com/theme/busicol/img/about/2.png");
+    }
+
+    .solution-li:nth-child(3) {
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+            url("https://preview.colorlib.com/theme/busicol/img/about/3.png");
+    }
 }
 
 @layer components {
@@ -37,14 +61,74 @@ header {
         @apply px-2 py-1;
     }
 
+    .nav-link-dropdown {
+        @apply list-none flex items-center;
+    }
+
     .dropdown-link {
         @apply px-6 py-1;
     }
 
     /* !header call to action buttons */
-
     .cta-btn {
-        @apply rounded-sm py-3 text-[14px] flex justify-center font-[450] tracking-widest;
+        @apply rounded-sm py-3 text-[14px] flex justify-center font-[450] tracking-widest text-white;
+    }
+
+    .nav-desktop-list {
+        @apply absolute bg-white w-50 text-black;
+    }
+
+    .nav-desktop-list li {
+        @apply p-3;
+    }
+
+    /* !explore our solutions section */
+
+    /* image and text container */
+    .solution-li {
+        @apply relative w-full max-w-127.5 py-25 bg-no-repeat bg-cover bg-center overflow-hidden cursor-pointer;
+    }
+
+    .icon-and-text {
+        @apply grid justify-items-center gap-y-1 *:text-white;
+    }
+
+    .icon-and-text svg {
+        @apply size-12;
+    }
+
+    .solution-heading {
+        @apply text-xl font-[550];
+    }
+
+    .solution-heading ~ p {
+        @apply mt-2;
+    }
+
+    .solution-li .green-box {
+        @apply grid place-items-center absolute inset-0 opacity-0 w-[inherit] max-w-[inherit] h-70 bg-main-green text-white text-center translate-y-full transition duration-500 ease-in-out;
+    }
+
+    .green-box > .text-content {
+        @apply w-[60%];
+    }
+
+    /* !largest business expert section */
+
+    .business-expert-list li {
+        @apply flex gap-2 items-center font-medium before:size-5 before:content-[url('https://preview.colorlib.com/theme/busicol/img/svg_icon/check.svg')];
+    }
+
+    .stat-cont {
+        @apply grid gap-3 text-center;
+    }
+
+    .stat-cont .num {
+        @apply text-5xl font-medium text-center;
+    }
+
+    .stat-cont .text {
+        @apply text-gray-500 font-medium;
     }
 }
 
