@@ -234,9 +234,19 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
+  .size-3 {
+    width: calc(var(--spacing) * 3);
+    height: calc(var(--spacing) * 3);
+  }
   .size-3\.5 {
     width: calc(var(--spacing) * 3.5);
     height: calc(var(--spacing) * 3.5);
+  }
+  .h-204 {
+    height: calc(var(--spacing) * 204);
   }
   .h-\[14\] {
     height: 14;
@@ -247,14 +257,23 @@
   .h-fit {
     height: fit-content;
   }
+  .w-4 {
+    width: calc(var(--spacing) * 4);
+  }
   .w-4\.5 {
     width: calc(var(--spacing) * 4.5);
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
   }
+  .w-41 {
+    width: calc(var(--spacing) * 41);
+  }
   .w-41\.25 {
     width: calc(var(--spacing) * 41.25);
+  }
+  .w-54 {
+    width: calc(var(--spacing) * 54);
   }
   .w-54\.25 {
     width: calc(var(--spacing) * 54.25);
@@ -265,11 +284,20 @@
   .w-full {
     width: 100%;
   }
+  .max-w-112 {
+    max-width: calc(var(--spacing) * 112);
+  }
   .max-w-112\.5 {
     max-width: calc(var(--spacing) * 112.5);
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .grid-rows-\[0fr\] {
     grid-template-rows: 0fr;
@@ -343,6 +371,10 @@
   .rounded-md {
     border-radius: var(--radius-md);
   }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
   .bg-\[\#F5FBFF\] {
     background-color: #F5FBFF;
   }
@@ -397,8 +429,14 @@
   .pt-25 {
     padding-top: calc(var(--spacing) * 25);
   }
+  .pt-37 {
+    padding-top: calc(var(--spacing) * 37);
+  }
   .pt-37\.5 {
     padding-top: calc(var(--spacing) * 37.5);
+  }
+  .pb-17 {
+    padding-bottom: calc(var(--spacing) * 17);
   }
   .pb-17\.5 {
     padding-bottom: calc(var(--spacing) * 17.5);
@@ -432,8 +470,15 @@
   .not-italic {
     font-style: normal;
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-70 {
     opacity: 70%;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .outline-1 {
     outline-style: var(--tw-outline-style);
@@ -799,6 +844,11 @@
     width: min(90%, 1110px);
   }
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -843,6 +893,7 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
       --tw-duration: initial;
