@@ -71,7 +71,7 @@
 
     /* !header call to action buttons */
     .cta-btn {
-        @apply rounded-sm py-3 text-[14px] flex justify-center font-[450] tracking-widest text-white;
+        @apply flex justify-center rounded-sm py-3 px-6 text-[14px] font-[450] tracking-widest;
     }
 
     .nav-desktop-list {
@@ -113,6 +113,13 @@
         @apply w-[60%];
     }
 
+    /* !our recent works (with grid) */
+
+    .works-grid-item,
+    .works-grid-item img {
+        @apply w-full h-auto;
+    }
+
     /* !largest business expert section */
 
     .business-expert-list li {
@@ -135,5 +142,9 @@
 @layer utilities {
     .wrapper {
         @apply w-[min(90%,1110px)];
+    }
+
+    .green-cta-styles {
+        @apply bg-main-green text-white hover:bg-white hover:text-main-green transition duration-500 ease-in-out;
     }
 }
