@@ -22,11 +22,12 @@
 </head>
 
 <body>
-    <header class="grid justify-items-center content-start gap-y-6 h-204 bg-no-repeat bg-center bg-cover text-white ">
+
+    <header class="grid content-start text-white bg-center bg-no-repeat bg-cover justify-items-center gap-y-6 h-204 ">
 
         <!-- top banner -->
         <div class="hidden w-full h-fit py-3 bg-[rgba(44,44,44,0.5)] lg:block">
-            <div class="wrapper mx-auto flex justify-between items-center w-full">
+            <div class="flex items-center justify-between w-full mx-auto wrapper">
                 <!-- icons -->
                 <div class="flex gap-4">
                     <i class="fa-brands fa-linkedin-in"></i>
@@ -53,13 +54,13 @@
         <div class="wrapper mt-3 min-[600px]:px-4 md:px-12 lg:mt-0">
 
             <!-- image and nav container -->
-            <div class="flex flex-col gap-1 items-start h-fit lg:flex-row lg:justify-between lg:items-center">
+            <div class="flex flex-col items-start gap-1 h-fit lg:flex-row lg:justify-between lg:items-center">
                 <!-- logo -->
                 <img src="https://preview.colorlib.com/theme/busicol/img/logo.png" alt="logo">
 
                 <!-- mobile nav container -->
-                <div class="z-1 w-full lg:hidden">
-                    <nav class="grid bg-light-grey p-2">
+                <div class="w-full z-1 lg:hidden">
+                    <nav class="grid p-2 bg-light-grey">
 
                         <!-- menu button -->
                         <label for="check"
@@ -202,8 +203,8 @@
                                 y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;"
                                 xml:space="preserve">
                                 <path id="XMLID_308_" d="M37.728,328.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999
-                            	c4.386-2.741,7.05-7.548,7.05-12.72c0-5.172-2.664-9.979-7.05-12.72L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4
-                            	C32.959,4.524,30,9.547,30,15v300C30,320.453,32.959,325.476,37.728,328.12z" />
+                                	c4.386-2.741,7.05-7.548,7.05-12.72c0-5.172-2.664-9.979-7.05-12.72L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4
+                                	C32.959,4.524,30,9.547,30,15v300C30,320.453,32.959,325.476,37.728,328.12z" />
                             </svg>
 
                         </span>
@@ -215,183 +216,375 @@
 
     </header>
 
-    <!-- !explore our solutions -->
-    <section class="pt-37.5 pb-30">
-        <div class="wrapper mx-auto">
-            <h2 class="section-heading text-center">Explore Our Solutions</h2>
+    <main>
+        <!-- !explore our solutions -->
+        <section class="pt-37.5 pb-30">
+            <div class="mx-auto wrapper">
+                <h2 class="text-center section-heading">Explore Our Solutions</h2>
 
-            <ul class="flex flex-col items-center relative mt-16 gap-8 lg:flex-row">
-                <!-- solution 1 -->
-                <li class="solution-li group">
-                    <div class="icon-and-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-scroll-text-icon lucide-scroll-text">
-                            <path d="M15 12h-5" />
-                            <path d="M15 8h-5" />
-                            <path d="M19 17V5a2 2 0 0 0-2-2H4" />
-                            <path
-                                d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" />
-                        </svg>
-                        <p class="solution-heading">Invoicing</p>
-                    </div>
-
-                    <div class="green-box group-hover:translate-y-0 group-hover:opacity-100">
-                        <div class="text-content">
-                            <span class="solution-heading">Invoicing</span>
-                            <p>These cases are perfectly simple and easy to distinguish. In a free hour power.</p>
+                <ul class="relative flex flex-col items-center gap-8 mt-16 lg:flex-row">
+                    <!-- solution 1 -->
+                    <li class="solution-li group">
+                        <div class="icon-and-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-scroll-text-icon lucide-scroll-text">
+                                <path d="M15 12h-5" />
+                                <path d="M15 8h-5" />
+                                <path d="M19 17V5a2 2 0 0 0-2-2H4" />
+                                <path
+                                    d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" />
+                            </svg>
+                            <p class="solution-heading">Invoicing</p>
                         </div>
-                    </div>
-                </li>
 
-                <!-- solution 2 -->
-                <li class="solution-li group">
-                    <div class="icon-and-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-scroll-text-icon lucide-scroll-text">
-                            <path d="M15 12h-5" />
-                            <path d="M15 8h-5" />
-                            <path d="M19 17V5a2 2 0 0 0-2-2H4" />
-                            <path
-                                d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" />
-                        </svg>
-                        <p class="solution-heading">Business Growth</p>
-                    </div>
-
-                    <div class="green-box group-hover:translate-y-0 group-hover:opacity-100">
-                        <div class="text-content">
-                            <span class="solution-heading">Business Growth</span>
-                            <p>These cases are perfectly simple and easy to distinguish. In a free hour power.</p>
+                        <div class="explore-hover-box group-hover:translate-y-0 group-hover:opacity-100">
+                            <div class="green-box-content">
+                                <span>Invoicing</span>
+                                <p>These cases are perfectly simple and easy to distinguish. In a free hour power.</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
+                    </li>
 
-                <!-- solution 3 -->
-                <li class="solution-li group">
-                    <div class="icon-and-text">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
-                            class="lucide lucide-scroll-text-icon lucide-scroll-text">
-                            <path d="M15 12h-5" />
-                            <path d="M15 8h-5" />
-                            <path d="M19 17V5a2 2 0 0 0-2-2H4" />
-                            <path
-                                d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" />
-                        </svg>
-                        <p class="solution-heading">Problem Solving</p>
-                    </div>
-
-                    <div class="green-box group-hover:translate-y-0 group-hover:opacity-100">
-                        <div class="text-content">
-                            <span class="solution-heading">Problem Solving</span>
-                            <p>These cases are perfectly simple and easy to distinguish. In a free hour power.</p>
+                    <!-- solution 2 -->
+                    <li class="solution-li group">
+                        <div class="icon-and-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-scroll-text-icon lucide-scroll-text">
+                                <path d="M15 12h-5" />
+                                <path d="M15 8h-5" />
+                                <path d="M19 17V5a2 2 0 0 0-2-2H4" />
+                                <path
+                                    d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" />
+                            </svg>
+                            <p class="solution-heading">Business Growth</p>
                         </div>
+
+                        <div class="explore-hover-box group-hover:translate-y-0 group-hover:opacity-100">
+                            <div class="green-box-content">
+                                <span>Business Growth</span>
+                                <p>These cases are perfectly simple and easy to distinguish. In a free hour power.</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- solution 3 -->
+                    <li class="solution-li group">
+                        <div class="icon-and-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-scroll-text-icon lucide-scroll-text">
+                                <path d="M15 12h-5" />
+                                <path d="M15 8h-5" />
+                                <path d="M19 17V5a2 2 0 0 0-2-2H4" />
+                                <path
+                                    d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3" />
+                            </svg>
+                            <p class="green-box-heading">Problem Solving</p>
+                        </div>
+
+                        <div class="explore-hover-box group-hover:translate-y-0 group-hover:opacity-100">
+                            <div class="green-box-content">
+                                <span>Problem Solving</span>
+                                <p>These cases are perfectly simple and easy to distinguish. In a free hour power.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- !the largest business expert -->
+        <section class="grid lg:grid-cols-2 lg:gap-8">
+            <img src="https://preview.colorlib.com/theme/busicol/img/about/about.png"
+                alt="a man sitting at his laptop, excited">
+
+            <!-- text and cta div  -->
+            <div class="grid gap-8 py-8 justify-items-center md:pt-0 md:pb-8">
+                <div class="wrapper">
+                    <h2>The Largest Business Expert</h2>
+
+                    <div class="grid mt-8 gap-y-5 text-light-grey">
+                        <p class="font-[350]">These cases are perfectly simple and easy to distinguish. In a free hour,
+                            when our power of choice is untrammelled and when nothing prevents
+                            our being able to do what we like best.
+                        </p>
+                        <ul class="business-expert-list">
+                            <li>Apartments frequently or motionless.</li>
+                            <li>Duis aute irure dolor in reprehenderit in voluptate.</li>
+                            <li>Voluptatem quia voluptas sit aspernatur.</li>
+                        </ul>
+
+                        <a href="#" class="px-8 cta-btn green-cta-styles w-fit outline outline-main-green">About Us</a>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </section>
+                </div>
 
-    <!-- !the largest business expert -->
-    <section class="grid lg:grid-cols-2 lg:gap-8">
-        <img src="https://preview.colorlib.com/theme/busicol/img/about/about.png"
-            alt="a man sitting at his laptop, excited">
+            </div>
 
-        <!-- text and cta div  -->
-        <div class="grid justify-items-center gap-8 py-8 md:pt-0 md:pb-8">
-            <div class="wrapper">
-                <h2>The Largest Business Expert</h2>
+            <!-- stats -->
+            <article class=" w-full md:col-span-2 bg-[#F5FBFF] pt-25 pb-17.5">
+                <div class="grid gap-10 mx-auto wrapper place-items-center md:grid-cols-3">
+                    <div class="stat-cont">
+                        <span class="num">520+</span>
+                        <p class="text">Total Projects</p>
+                    </div>
 
-                <div class="mt-8 grid gap-y-5 text-light-grey">
-                    <p class="font-[350]">These cases are perfectly simple and easy to distinguish. In a free hour,
-                        when our power of choice is untrammelled and when nothing prevents
-                        our being able to do what we like best.
+                    <div class="stat-cont">
+                        <span class="num">244</span>
+                        <p class="text">On Going Projects</p>
+                    </div>
+
+                    <div class="stat-cont">
+                        <span class="num">95%</span>
+                        <p class="text">Job Success</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- !our recent works -->
+        <section class="py-12 md:py-25 lg:py-37.5">
+            <div class="grid gap-8 mx-auto text-center wrapper justify-items-center">
+                <h2>Our Recent Works</h2>
+                <p class="md:px-[20%]">These cases are perfectly simple and easy to distinguish. In a free
+                    hour, when our power of choice is untrammelled.
+                </p>
+
+                <!-- grid -->
+                <article
+                    class="grid gap-y-6 md:grid-cols-2 md:grid-rows-[1fr_repeat(3,0.5fr)] md:gap-x-7 xl:grid-rows-2 xl:grid-cols-3">
+
+                    <!-- item 1 -->
+                    <div class="works-grid-item group">
+                        <div class="grid-hover-box group-hover:translate-x-0 group-hover:opacity-80">
+                            <div class="green-box-content">
+                                <span>Product Branding</span>
+                                <p>Branding</p>
+                            </div>
+                        </div>
+                        <img src="https://preview.colorlib.com/theme/busicol/img/gallery/1.png"
+                            alt="new world translation of the holy scriptures">
+                    </div>
+
+                    <!-- item 2 -->
+                    <div class="works-grid-item group">
+                        <div class="grid-hover-box group-hover:translate-x-0 group-hover:opacity-80">
+                            <div class="green-box-content">
+                                <span>Product Branding</span>
+                                <p>Branding</p>
+                            </div>
+                        </div>
+                        <img src="https://preview.colorlib.com/theme/busicol/img/gallery/2.png" alt="amazon echo dot">
+                    </div>
+
+                    <!-- item 3 -->
+                    <div class="works-grid-item group md:row-span-2 xl:row-span-1">
+                        <div class="grid-hover-box group-hover:translate-x-0 group-hover:opacity-80">
+                            <div class="green-box-content">
+                                <span>Product Branding</span>
+                                <p>Branding</p>
+                            </div>
+                        </div>
+                        <img src="https://preview.colorlib.com/theme/busicol/img/gallery/3.png"
+                            alt="a black iphone, apple watch and macbook">
+                    </div>
+
+                    <!-- item 4 -->
+                    <div class="works-grid-item group xl:col-span-2 xl:h-full">
+                        <div class="grid-hover-box group-hover:translate-x-0 group-hover:opacity-80">
+                            <div class="green-box-content">
+                                <span>Product Branding</span>
+                                <p>Branding</p>
+                            </div>
+                        </div>
+                        <img src="https://preview.colorlib.com/theme/busicol/img/gallery/4.png" alt="bose speaker">
+                    </div>
+
+                    <!-- item 5 -->
+                    <div class="works-grid-item group md:row-span-2 md:col-[2/3] xl:col-[3/4]">
+                        <div class="grid-hover-box xl:h-[397.92px] group-hover:translate-x-0 group-hover:opacity-80">
+                            <div class="green-box-content">
+                                <span>Product Branding</span>
+                                <p>Branding</p>
+                            </div>
+                        </div>
+                        <img src="https://preview.colorlib.com/theme/busicol/img/gallery/5.png" alt="an orange chair">
+                    </div>
+                </article>
+
+                <a href="#"
+                    class="cta-btn outline-1 outline-main-green text-main-green hover:bg-main-green hover:text-white">More
+                    Works</a>
+            </div>
+
+        </section>
+
+        <!-- !section grey picture background -->
+        <section
+            class="grey-section bg-[#525252] py-25 md:py-36 sm:bg-[url('https://preview.colorlib.com/theme/busicol/img/banner/about_bg.png')] sm:bg-size-[550%] lg:bg-size-[200%] bg-no-repeat grid place-items-center">
+            <article class="items-cont wrapper">
+                <!-- item 1 -->
+                <div class="item-cont">
+                    <img src="https://preview.colorlib.com/theme/busicol/img/svg_icon/controls.svg"
+                        alt="control sliders">
+                    <h5>Unlimited Control</h5>
+                    <p>These cases are perfectly simple and easy</p>
+                </div>
+
+                <!-- item 2 -->
+                <div class="item-cont">
+                    <img src="https://preview.colorlib.com/theme/busicol/img/svg_icon/bar-chart.svg" alt="bar chart">
+                    <h5>Rapid Growth</h5>
+                    <p>These cases are perfectly simple and easy</p>
+                </div>
+
+                <!-- item 3 -->
+                <div class="item-cont">
+                    <img src="https://preview.colorlib.com/theme/busicol/img/svg_icon/puzzle.svg"
+                        alt="puzzle that's been fit together">
+                    <h5>Problem Solving</h5>
+                    <p>These cases are perfectly simple and easy</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- !financial advice section -->
+        <section class="pt-25 md:pt-36">
+            <div class="flex flex-col lg:flex-row mx-auto gap-30 w-[min(90%,690px)] lg:w-[min(90%,1110px)]">
+                <!-- text and buttons (top/left) -->
+                <div class="grid content-start gap-y-8">
+                    <h2 class="text-4xl leading-13">Gives you the best Financial solution for business</h2>
+                    <p class="text-light-grey">
+                        These cases are perfectly simple and easy to distinguish. In a free hour, when our power of
+                        choice
+                        is
+                        untrammelled and
+                        when nothing prevents our being able to do what we like best.
                     </p>
-                    <ul class="business-expert-list">
-                        <li>Apartments frequently or motionless.</li>
-                        <li>Duis aute irure dolor in reprehenderit in voluptate.</li>
-                        <li>Voluptatem quia voluptas sit aspernatur.</li>
-                    </ul>
-
-                    <a href="#" class="cta-btn green-cta-styles px-8 w-fit outline outline-main-green">About Us</a>
+                    <div class="slider-buttons">
+                        <span><i class="fa-solid fa-less-than"></i></span>
+                        <span><i class="fa-solid fa-greater-than"></i></span>
+                    </div>
                 </div>
+
+                <!-- image (bottom/right) -->
+                <img src="https://preview.colorlib.com/theme/busicol/img/about/finance.png"
+                    alt="2 ladies drawing a plan on the whiteboard">
             </div>
 
-        </div>
+        </section>
 
-        <!-- stats -->
-        <article class="grid place-items-center gap-10 bg-[#F5FBFF] pt-25 pb-17.5 md:grid-cols-3 md:col-span-2">
-            <div class="stat-cont">
-                <span class="num">520+</span>
-                <p class="text">Total Projects</p>
-            </div>
-
-            <div class="stat-cont">
-                <span class="num">244</span>
-                <p class="text">On Going Projects</p>
-            </div>
-
-            <div class="stat-cont">
-                <span class="num">95%</span>
-                <p class="text">Job Success</p>
-            </div>
-        </article>
-    </section>
-
-    <!-- !our recent works -->
-    <section class="py-12 md:py-25 lg:py-37.5">
-        <div class="wrapper mx-auto grid justify-items-center gap-8 text-center">
-            <h2>Our Recent Works</h2>
-            <p class="md:px-[20%]">These cases are perfectly simple and easy to distinguish. In a free
-                hour, when our power of choice is untrammelled.
-            </p>
-
-            <article
-                class="grid gap-y-6 md:grid-cols-2 md:grid-rows-[1fr_repeat(3,0.5fr)] md:gap-x-7 xl:grid-rows-2 xl:grid-cols-3">
-
-                <div class="works-grid-item">
-                    <div class=""></div>
-                    <img src="https://preview.colorlib.com/theme/busicol/img/gallery/1.png"
-                        alt="new world translation of the holy scriptures" decoding="async">
+        <!-- !testimonials -->
+        <section class="grid place-items-center py-25 md:py-36">
+            <article class="grid justify-items-center wrapper gap-y-6">
+                <div class="flex items-center gap-3">
+                    <img class="testimonial-image size-15 md:size-25"
+                        src="https://preview.colorlib.com/theme/busicol/img/testmonial/1.png"
+                        alt="a man with glasses in a blue suit">
+                    <img class="testimonial-image" src="https://preview.colorlib.com/theme/busicol/img/testmonial/1.png"
+                        alt="a man with glasses in a blue suit">
+                    <img class="testimonial-image" src="https://preview.colorlib.com/theme/busicol/img/testmonial/1.png"
+                        alt="a man with glasses in a blue suit">
                 </div>
 
-                <div class="works-grid-item">
-                    <div></div>
-                    <img src="https://preview.colorlib.com/theme/busicol/img/gallery/2.png" alt="amazon echo dot">
-                </div>
+                <p class="text-xl text-center underline text-[#727272] font-medium">
+                    These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice
+                    is
+                    untrammelled and
+                    when nothing prevents our being able.
+                </p>
 
-                <div class="works-grid-item md:row-span-2 xl:row-span-1">
-                    <div></div>
-                    <img src="https://preview.colorlib.com/theme/busicol/img/gallery/3.png"
-                        alt="a black iphone, apple watch and macbook">
-                </div>
-
-                <div class="works-grid-item xl:col-span-2 xl:h-full">
-                    <div></div>
-                    <img src="https://preview.colorlib.com/theme/busicol/img/gallery/4.png" alt="bose speaker">
-                </div>
-
-                <div class="works-grid-item md:row-span-2 md:col-[2/3] xl:col-[3/4]">
-                    <div></div>
-                    <img src="https://preview.colorlib.com/theme/busicol/img/gallery/5.png" alt="an orange chair">
+                <div>
+                    <p>ROBERT JONSON</p>
+                    <p class="text-[14px] text-center mt-2">Business Owner</p>
                 </div>
             </article>
 
-            <a href="#" class="cta-btn outline-1 outline-main-green text-main-green">More Works</a>
-        </div>
+        </section>
 
-    </section>
+        <!-- !do you have any project section (with green background) -->
+        <section class="grid place-items-center bg-main-green py-25 lg:py-37.5">
+            <div class="grid gap-6 text-center text-white wrapper max-w-125">
+                <h2>Do you have any project?</h2>
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio
+                    cumque nihil impedit quo minus.</p>
+                <a href="#" class="px-6 cta-btn green-cta-styles outline-1 w-fit justify-self-center">Contact Us</a>
+            </div>
+        </section>
+    </main>
 
-    <!-- !do you have any project section -->
-    <section class="grid place-items-center bg-main-green py-25 lg:py-37.5">
-        <div class="wrapper grid gap-6 text-white text-center max-w-125">
-            <h2>Do you have any project?</h2>
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio
-                cumque nihil impedit quo minus.</p>
-            <a href="#" class="cta-btn outline-1 w-fit justify-self-center px-6">Contact Us</a>
+    <footer class="bg-[#2C2C2C]">
+        <div class="py-15 md:py-36">
+            <div class="footer-wrapper wrapper">
+
+                <!-- 1st cont (top/left) -->
+                <div class="footer-cont">
+                    <article class="grid gap-y-7">
+                        <!-- logo -->
+                        <img src="https://preview.colorlib.com/theme/busicol/img/logo.png" alt="logo">
+
+                        <p class="w-[80%] text-footer-grey">Firmament morning sixth subdue darkness creeping gathered
+                            divide
+                        </p>
+
+                        <!-- social media links -->
+                        <div class="flex gap-3 footer-socials">
+                            <span><i class="fa-brands fa-facebook-f"></i></span>
+                            <span><i class="fa-brands fa-twitter"></i></span>
+                            <span><i class="fa-brands fa-instagram"></i></span>
+                        </div>
+                    </article>
+
+                    <!-- services -->
+                    <div class="footer-heading-and-links-cont">
+                        <h5 class="links-cont-heading">Services</h5>
+
+                        <ul class="links-cont-ul">
+                            <li><a href="#">Design</a></li>
+                            <li><a href="#">Development</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Consulting</a></li>
+                            <li><a href="#">Finance</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 2nd cont (bottom right) -->
+                <div class="footer-cont">
+                    <!-- useful links -->
+                    <div class="footer-heading-and-links-cont">
+                        <h5 class="links-cont-heading">Useful Links</h5>
+
+                        <ul class="links-cont-ul">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Free quote</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- address -->
+
+                    <address class="footer-heading-and-links-cont">
+                        <h5 class="links-cont-heading">Address</h5>
+
+                        <ul class="links-cont-ul">
+                            <li>200, D-block, Green lane USA</li>
+                            <li>+10 367 467 8934</li>
+                            <li>docmed@contact.com</li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+
         </div>
-    </section>
+        <div class="bg-[#1F1F1F] text-white text-center p-7.5">
+            <p>Copyright ©2026 All rights reserved | This template is made with <i class="fa-regular fa-heart"></i> by
+                <span class="text-main-green">Colorlib</span>
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>

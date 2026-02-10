@@ -11,6 +11,8 @@
 @theme {
     --color-main-green: #28ae60;
     --color-light-grey: #4c4c4c;
+    --color-lighter-grey: #d5d5d5;
+    --color-footer-grey: #c7c7c7;
 }
 
 @layer base {
@@ -62,7 +64,7 @@
     }
 
     .nav-link-dropdown {
-        @apply list-none flex items-center;
+        @apply flex items-center list-none;
     }
 
     .dropdown-link {
@@ -71,11 +73,11 @@
 
     /* !header call to action buttons */
     .cta-btn {
-        @apply flex justify-center rounded-sm py-3 px-6 text-[14px] font-[450] tracking-widest;
+        @apply flex justify-center rounded-sm py-3 px-6 text-[14px] font-[450] tracking-widest transition duration-500 ease-in-out;
     }
 
     .nav-desktop-list {
-        @apply absolute bg-white w-50 text-black;
+        @apply absolute text-black bg-white w-50;
     }
 
     .nav-desktop-list li {
@@ -97,20 +99,27 @@
         @apply size-12;
     }
 
-    .solution-heading {
+    /* !green box that shows up on hover */
+
+    .explore-hover-box,
+    .grid-hover-box {
+        @apply grid text-center text-white transition duration-500 ease-in-out opacity-0 place-items-center bg-main-green;
+    }
+
+    .green-box-content {
+        @apply w-[60%];
+    }
+
+    .green-box-content > span {
         @apply text-xl font-[550];
     }
 
-    .solution-heading ~ p {
+    .green-box-content > p {
         @apply mt-2;
     }
 
-    .solution-li .green-box {
-        @apply grid place-items-center absolute inset-0 opacity-0 w-[inherit] max-w-[inherit] h-70 bg-main-green text-white text-center translate-y-full transition duration-500 ease-in-out;
-    }
-
-    .green-box > .text-content {
-        @apply w-[60%];
+    .explore-hover-box {
+        @apply absolute inset-0 w-[inherit] max-w-[inherit] h-70 translate-y-full;
     }
 
     /* !our recent works (with grid) */
@@ -118,6 +127,14 @@
     .works-grid-item,
     .works-grid-item img {
         @apply w-full h-auto;
+    }
+
+    .works-grid-item {
+        @apply relative overflow-hidden cursor-pointer;
+    }
+
+    .grid-hover-box {
+        @apply absolute inset-0 w-full text-white -translate-x-full bg-main-green;
     }
 
     /* !largest business expert section */
@@ -135,7 +152,75 @@
     }
 
     .stat-cont .text {
-        @apply text-gray-500 font-medium;
+        @apply font-medium text-gray-500;
+    }
+
+    /* !financial advice section */
+
+    .slider-buttons {
+        @apply hidden lg:flex gap-x-3;
+    }
+
+    .slider-buttons span {
+        @apply grid rounded-full place-items-center size-10 text-main-green outline outline-main-green hover:bg-main-green hover:text-white;
+    }
+
+    /* !section with grey picture background */
+
+    .grey-section > article.items-cont {
+        @apply grid gap-10 md:grid-cols-2 lg:grid-cols-3;
+    }
+
+    .items-cont > .item-cont {
+        @apply grid text-center text-white border border-white place-items-center gap-y-5 p-15;
+    }
+
+    .item-cont h5 {
+        @apply text-xl;
+    }
+
+    /* !testimonials */
+
+    .testimonial-image:nth-last-child(-n + 2) {
+        @apply size-10 opacity-50  md:size-17.5;
+    }
+
+    /* !footer styles */
+
+    .footer-wrapper {
+        @apply flex flex-col mx-auto gap-y-10 lg:flex-row;
+    }
+
+    .footer-cont {
+        @apply flex flex-col gap-8 text-white md:flex-row;
+    }
+
+    .footer-cont > * {
+        @apply md:w-[50%] lg:w-full;
+    }
+
+    .footer-socials span {
+        @apply grid place-items-center size-10 bg-[#565656] rounded-full;
+    }
+
+    .footer-heading-and-links-cont {
+        @apply flex flex-col gap-y-8;
+    }
+
+    .links-cont-heading {
+        @apply text-[22px] font-medium;
+    }
+
+    .links-cont-ul {
+        @apply grid gap-y-4;
+    }
+
+    .links-cont-ul li {
+        @apply text-[13px] text-footer-grey;
+    }
+
+    address.footer-heading-and-links-cont {
+        @apply not-italic;
     }
 }
 
@@ -145,6 +230,6 @@
     }
 
     .green-cta-styles {
-        @apply bg-main-green text-white hover:bg-white hover:text-main-green transition duration-500 ease-in-out;
+        @apply text-white bg-main-green hover:bg-white hover:text-main-green;
     }
 }
